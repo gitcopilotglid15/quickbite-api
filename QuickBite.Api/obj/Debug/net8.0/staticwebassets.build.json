@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "3H6GUwCOX698ggeEkV/LWnaL2GVInwxkcG96WVSuOIk=",
+  "Source": "QuickBite.Api",
+  "BasePath": "_content/QuickBite.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

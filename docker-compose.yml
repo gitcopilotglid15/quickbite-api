@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  quickbite-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: quickbite-api
+    ports:
+      - "5026:5026"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ASPNETCORE_URLS=http://+:5026
+    volumes:
+      # Mount a volume for SQLite database persistence
+      - quickbite_data:/app/data
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5026/health", "||", "exit", "1"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+volumes:
+  quickbite_data:
+    driver: local
