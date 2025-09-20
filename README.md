@@ -437,4 +437,10 @@ docker-compose down                    # Stop containers
 dotnet ef migrations add <Name>        # Add migration
 dotnet ef database update              # Update database
 
+For questions or support, please refer to the project documentation or create an issue in the repository.
 
+
+## One thing Copilot helped you achieve faster
+    Copilot helpe me to create basic application structure, installing plugins and dependencies. 
+## One time you had to reject or refactor Copilot’s code
+    Unsecure code generated for add menu.
